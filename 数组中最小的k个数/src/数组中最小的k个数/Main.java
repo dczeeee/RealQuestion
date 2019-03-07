@@ -19,8 +19,19 @@ public class Main {
         if(input.length<k){
             return list;
         }
+        //利用排序算法先对数组进行排序
+//        for(int i=0;i<input.length-1;i++){
+//            for(int j=0;j<input.length-i-1;j++){
+//                if(input[j+1]<input[j]){
+//                    int temp = input[j];
+//                    input[j] = input[j+1];
+//                    input[j+1] = temp; 
+//                }
+//            }
+//        }
         
         quicksort(input, 0, input.length-1);
+        
         
         for(int m=0;m<k;m++){
             list.add(input[m]);
